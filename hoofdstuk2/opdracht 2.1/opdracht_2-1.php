@@ -2,7 +2,7 @@
 * User: Rens Bedijn
 * Date: 5-2-2020
 * Time: 13:43 PM
-* File: index.php
+* File: opdracht_2-1.php
 -->
 
 <!DOCTYPE html>
