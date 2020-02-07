@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link href="index.css" rel="stylesheet" type="text/css">
+        <link href="css/index.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <header>

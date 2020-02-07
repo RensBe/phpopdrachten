@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="opdracht_2-1.css" rel="stylesheet" type="text/css">
+    <link href="css/opdracht_2-1.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <header>
@@ -18,6 +18,11 @@
     <h2>
         Menu
     </h2>
+    <p>
+        <?php
+            echo "hello world!"
+        ?>
+    </p>
 
 </aside>
 <main id="wrapper">
