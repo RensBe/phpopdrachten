@@ -1,0 +1,24 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+header
+{
+    width: 100vw;
+    text-align: right;
+    background-color: lightblue;
+}
+aside
+{
+    width: 49vw;
+    float: left;
+    background-color: lightyellow;
+}
+main
+{
+    width: 49vw;
+    float: right;
+    background-color: lightgrey;
+}
