@@ -6,12 +6,19 @@
 -->
 <?php
 $text1 = "Hallo";
-$text2 = "toch een makkelijke taal";
-$text3 = "wat is";
-$text4 = "PHP";
-$text5 = "nooit gedacht dat";
-$text6 = "de ingewikkelde installatie";
-$text7 = "Fijn toch?";
+$text2 = "een makkelijke taal";
+$text3 = "toch zo'n makkelijke taal";
+$text4 = "wat is";
+$text5 = "PHP";
+$text6 = "Nooit gedacht dat";
+$text7 = "De installatie is best ingewikkeld";
+$text8 = "Fijn";
+$text9 = "?";
+$text10 = ".";
+$text11 = ",";
+$text12 = "<br>";
+$text13 = "is";
+$text14 = "Vind je niet";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,17 +31,9 @@ $text7 = "Fijn toch?";
         </h2>
         <p>
             <?php
-                echo $text1." ".$text3." ".$text4." ".$text2
-            ?>
-        </p>
-        <p>
-            <?php
-                echo $text3." ".substr($text2,0,4)." ".$text6." ".$text7
-            ?>
-        </p>
-        <p>
-            <?php
-                echo $text5." ".$text4." ".$text2." ".$text3
+                echo $text1.$text11." ".$text4." ".$text5." ".substr($text3,0,4)." ".$text2.$text10.$text12;
+                echo $text7.$text10." ".$text8." ".substr($text3,0,4).$text9.$text12;
+                echo $text6." ".$text5." ".$text3." ".$text13.$text10;
             ?>
         </p>
         <h2>
@@ -42,7 +41,7 @@ $text7 = "Fijn toch?";
         </h2>
         <p>
             <?php
-                echo $text1.", ".$text3." ".$text4.", ondanks ".$text6." ".$text2."?"
+                echo $text1.", ".$text3." ".$text4.", ondanks ".$text6." ".$text2.$text8
             ?>
         </p>
         <p>
