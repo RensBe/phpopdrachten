@@ -41,13 +41,12 @@ $text14 = "Vind je niet";
         </h2>
         <p>
             <?php
-                echo $text1.", ".$text3." ".$text4.", ondanks ".$text6." ".$text2.$text8
+                echo $text1.$text11.$text12;
+                echo $text8." ".substr($text3,0,4)." ".substr($text6,14,3)." ".$text5.substr($text3,5,24)." ".$text13.".".$text12;
+                echo $text7.$text10." ".$text14.$text10;
             ?>
         </p>
         <p>
-            <?php
-                echo $text7." ".$text5." ".$text4." eigenlijk ".$text2." blijkt te zijn!"
-            ?>
         </p>
     </body>
 </html>
