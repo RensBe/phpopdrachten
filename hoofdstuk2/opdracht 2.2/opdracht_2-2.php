@@ -1,10 +1,11 @@
-<!--
+<?php
+/*
 * User: Rens Bedijn
 * Date: 7-2-2020
 * Time: 13:43 PM
 * File: opdracht_2-2.php
--->
-<?php
+*/
+
 $text1 = "Hallo";
 $text2 = "een makkelijke taal";
 $text3 = "toch zo'n makkelijke taal";
