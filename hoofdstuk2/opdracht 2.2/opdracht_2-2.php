@@ -5,7 +5,7 @@
 * Time: 13:43 PM
 * File: opdracht_2-2.php
 */
-
+//alle veriabelen die worden gebruikt
 $text1 = "Hallo";
 $text2 = "een makkelijke taal";
 $text3 = "toch zo'n makkelijke taal";
@@ -25,12 +25,16 @@ $text14 = "Vind je niet";
 <html lang="en">
     <head>
         <link href="css/style.css" rel="stylesheet" type="text/css">
+        <title>
+            opdracht 2.2
+        </title>
     </head>
     <body>
         <h2>
             Taak 2
         </h2>
         <p>
+<!--            textblok die naar de variabelen verwijst-->
             <?php
                 echo $text1.$text11." ".$text4." ".$text5." ".substr($text3,0,4)." ".$text2.$text10.$text12;
                 echo $text7.$text10." ".$text8." ".substr($text3,0,4).$text9.$text12;
@@ -41,13 +45,12 @@ $text14 = "Vind je niet";
             Taak 3
         </h2>
         <p>
+<!--            textblok 2-->
             <?php
                 echo $text1.$text11.$text12;
                 echo $text8." ".substr($text3,0,4)." ".substr($text6,14,3)." ".$text5.substr($text3,5,24)." ".$text13.".".$text12;
                 echo $text7.$text10." ".$text14.$text10;
             ?>
-        </p>
-        <p>
         </p>
     </body>
 </html>
