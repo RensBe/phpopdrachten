@@ -20,7 +20,7 @@
     </h2>
     <p>
         <?php
-            echo "hello world!"
+            echo "hello world!";
         ?>
     </p>
 

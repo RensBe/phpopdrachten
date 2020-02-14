@@ -33,24 +33,18 @@ $text14 = "Vind je niet";
         <h2>
             Taak 2
         </h2>
-        <p>
 <!--            textblok die naar de variabelen verwijst-->
             <?php
-                echo $text1.$text11." ".$text4." ".$text5." ".substr($text3,0,4)." ".$text2.$text10.$text12;
+                echo "<p>".$text1.$text11." ".$text4." ".$text5." ".substr($text3,0,4)." ".$text2.$text10.$text12;
                 echo $text7.$text10." ".$text8." ".substr($text3,0,4).$text9.$text12;
-                echo $text6." ".$text5." ".$text3." ".$text13.$text10;
+                echo $text6." ".$text5." ".$text3." ".$text13.$text10."</p>";
             ?>
-        </p>
-        <h2>
-            Taak 3
-        </h2>
-        <p>
-<!--            textblok 2-->
             <?php
-                echo $text1.$text11.$text12;
+                echo "<h2>Taak 3</h2>";
+                //textblok 2
+                echo "<p>".$text1.$text11.$text12;
                 echo $text8." ".substr($text3,0,4)." ".substr($text6,14,3)." ".$text5.substr($text3,5,24)." ".$text13.".".$text12;
-                echo $text7.$text10." ".$text14.$text10;
+                echo $text7.$text10." ".$text14.$text10."</p>";
             ?>
-        </p>
     </body>
 </html>
