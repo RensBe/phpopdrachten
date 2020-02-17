@@ -7,18 +7,18 @@ body
 header
 {
     width: 100vw;
-    text-align: right;
+    text-align: center;
     background-color: lightblue;
 }
 aside
 {
-    width: 49vw;
+    width: 20vw;
     float: left;
     background-color: lightyellow;
 }
 main
 {
-    width: 49vw;
+    width: 79vw;
     float: right;
     background-color: lightgrey;
 }

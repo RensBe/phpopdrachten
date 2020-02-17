@@ -24,7 +24,7 @@ $text14 = "Vind je niet";
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="../../css/index.css" rel="stylesheet" type="text/css">
         <title>
             opdracht 2.2
         </title>
