@@ -3,7 +3,7 @@
 * User: Rens Bedijn
 * Date: 7-2-2020
 * Time: 13:43 PM
-* File: opdracht_2-2.php
+* File: opdracht_3-2.php
 */
 //alle veriabelen die worden gebruikt
 $text1 = "Hallo";
