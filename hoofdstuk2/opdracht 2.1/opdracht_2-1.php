@@ -5,28 +5,18 @@
 * File: opdracht_2-1.php
 -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link href="css/opdracht_2-1.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-<header>
-    <h1><?php echo "opdracht 2.1"; ?></h1>
-</header>
-<aside>
-    <h2>
-        Menu
-    </h2>
-    <p>
-        <?php
-            echo "hello world!";
-        ?>
-    </p>
+<?php
+//includes van de pagina
+include "../../includes/header.php";
+include "../../includes/menu.php";
+?>
 
-</aside>
+
 <main id="wrapper">
     <h2>Uitwerkingen</h2>
+    <?php
+    echo "hello world!";
+    ?>
 </main>
 </body>
 </html>

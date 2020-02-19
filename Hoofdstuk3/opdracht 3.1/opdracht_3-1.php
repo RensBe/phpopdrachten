@@ -5,58 +5,11 @@
 * File: index.php
 -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link href="../../css/index.css" rel="stylesheet" type="text/css">
-    <title>
-        opdr 3.1
-    </title>
-</head>
-<body>
-<header>
-    <h1><?php echo "Uitwerkingen van PHP-opdrachten"; ?></h1>
-</header>
-<aside>
-    <h2>
-        Menu
-    </h2>
-    <ul>
-        <li>Hoofdstuk 2
-            <ul>
-                <li>
-                    <a href="hoofdstuk2/opdracht 2.1/opdracht_2-1.php">Opdracht 2.1</a>
-                </li>
-                <li>
-                    <a href="hoofdstuk2/opdracht_2-2.php">Opdracht 2.2</a>
-                </li>
-            </ul>
-        </li>
-        <li>Hoofdstuk 3
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </li>
-        <li>Hoofdstuk 4
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </li>
-        <li>Hoofdstuk 5
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </li>
-    </ul>
-</aside>
+<?php
+//includes van de pagina
+include "../../includes/header.php";
+include "../../includes/menu.php";
+?>
 <main id="wrapper">
     <h2>Uitwerkingen</h2>
 <?php

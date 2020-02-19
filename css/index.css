@@ -18,11 +18,14 @@ aside
 }
 main
 {
-    width: 60vw;
+    width: 70vw;
     float: right;
     background-color: lightgrey;
 }
 footer
 {
     background-color: red;
+    width: 100vw;
+    bottom: 0;
+    position: absolute;
 }

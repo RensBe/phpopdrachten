@@ -6,6 +6,7 @@
 -->
 
 <?php
+//includes van de pagina
 include "../../includes/header.php";
 include "../../includes/menu.php";
 ?>

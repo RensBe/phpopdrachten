@@ -5,16 +5,11 @@
 * File: index.php
 -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link href="index.css" rel="stylesheet" type="text/css">
-    <title>
-        opdr 3.1
-    </title>
-</head>
-<body>
 <?php
+//includes van de pagina
+include "../../includes/header.php";
+include "../../includes/menu.php";
+
 echo "<footer>";
 echo "<p>Rens Bedijn, IO1A4</p>";
 echo "</footer>";

@@ -20,19 +20,13 @@ $text11 = ",";
 $text12 = "<br>";
 $text13 = "is";
 $text14 = "Vind je niet";
+
+//includes van de pagina
+include "../../includes/header.php";
+include "../../includes/menu.php";
 ?>
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link href="../../css/index.css" rel="stylesheet" type="text/css">
-        <title>
-            opdracht 2.2
-        </title>
-    </head>
-    <body>
-        <h2>
-            Taak 2
-        </h2>
+<main id="wrapper">
+    <h2>Uitwerkingen</h2>
 <!--            textblok die naar de variabelen verwijst-->
             <?php
                 echo "<p>".$text1.$text11." ".$text4." ".$text5." ".substr($text3,0,4)." ".$text2.$text10.$text12;
@@ -46,5 +40,6 @@ $text14 = "Vind je niet";
                 echo $text8." ".substr($text3,0,4)." ".substr($text6,14,3)." ".$text5.substr($text3,5,24)." ".$text13.".".$text12;
                 echo $text7.$text10." ".$text14.$text10."</p>";
             ?>
-    </body>
+</main>
+</body>
 </html>
