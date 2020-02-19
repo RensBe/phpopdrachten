@@ -1,7 +1,10 @@
-body
+*
 {
     margin: 0;
     padding: 0;
+}
+body
+{
     background-color: black;
 }
 header
@@ -18,11 +21,16 @@ aside
 }
 main
 {
-    width: 60vw;
+    width: 79vw;
     float: right;
     background-color: lightgrey;
 }
 footer
 {
+    position: absolute;
     background-color: red;
+    color: white;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
 }
