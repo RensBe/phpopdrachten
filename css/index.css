@@ -25,7 +25,10 @@ main
 footer
 {
     background-color: red;
+    color: white;
     width: 100vw;
+    height: 20px;
     bottom: 0;
-    position: absolute;
+    position: fixed;
+    text-align: center;
 }
