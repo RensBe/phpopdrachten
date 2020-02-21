@@ -5,11 +5,11 @@
 * File: index.php
 -->
 <?php
-include "../variabelen.php";
+include "../Hoofdstuk3/variabelen.php";
 ?>
 <footer>
     <?php
-    echo $name + ", " + $klas + " " + $year;
+    echo $name . ", " . $klas . " " . $year;
     ?>
 </footer>
 </body>
