@@ -28,6 +28,7 @@ include "../../includes/menu.php";
         echo "<p>U moet stoppen</p>";
     }
 
+
     $countryName = "";
     $currentAge = 18;
     //begin if statement, checkt of het lang België is
@@ -38,7 +39,7 @@ include "../../includes/menu.php";
         {
             echo "Je mag alle drank drinken";
         }
-        elseif ($currentAge >= 16)
+        else if ($currentAge >= 16)
         {
             echo "Je mag alleen zwakke drank drinken";
         }
@@ -48,7 +49,7 @@ include "../../includes/menu.php";
         }
     }
     //checkt of het land Bulgarije of Nederland is
-    elseif ($countryName == "Bulgarije" || $countryName == "Nederland")
+    else if ($countryName == "Bulgarije" || $countryName == "Nederland")
     {
         //checkt leeftijd
         if ($currentAge >= 18)

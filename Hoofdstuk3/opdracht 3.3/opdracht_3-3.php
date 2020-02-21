@@ -12,9 +12,7 @@ include "../variabelen.php";
 ?>
 <main id="wrapper">
     <h2>Uitwerkingen</h2>
-    <?php
-    echo $year;
-    ?>
+
 </main>
 <?php
 include "../../includes/footer.php";

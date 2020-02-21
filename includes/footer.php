@@ -4,9 +4,13 @@
 * Time: 13:43 PM
 * File: index.php
 -->
-
+<?php
+include "../variabelen.php";
+?>
 <footer>
-    Rens Bedijn, IO1A4
+    <?php
+    echo $name + ", " + $klas + " " + $year;
+    ?>
 </footer>
 </body>
 </html>
