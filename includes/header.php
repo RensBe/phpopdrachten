@@ -10,7 +10,7 @@
 <head>
     <link href="../../css/index.css" rel="stylesheet" type="text/css">
     <title>
-        opdr 3.1
+        opdrachten
     </title>
 </head>
 <body>
