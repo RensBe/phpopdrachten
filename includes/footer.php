@@ -5,9 +5,7 @@
 * File: index.php
 -->
 <?php
-$year = date('Y');
-$name = "Rens Bedijn";
-$klas = "IO1A4";
+include "variabelen.php"
 ?>
 <footer>
     <?php
