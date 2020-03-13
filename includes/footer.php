@@ -27,7 +27,7 @@ include "variabelen.php"
     else
     {
         echo "Goedenavond";
-    };
+    }
     ?>
 </footer>
 </body>

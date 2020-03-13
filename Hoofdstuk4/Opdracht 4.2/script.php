@@ -18,6 +18,7 @@ $courseName = "PHP";
 switch($courseName)
 {
     case "HTML/CSS":
+    case "Studieloopbaan begeleiding":
         $teacherName = "Lambregts";
         break;
     case "JavaScript":
@@ -40,9 +41,6 @@ switch($courseName)
         break;
     case "Rekenen":
         $teacherName = "Mee";
-        break;
-    case "Studieloopbaan begeleiding":
-        $teacherName = "Lambregts";
         break;
     case "Loopbaan & burgerschap":
         $teacherName = "Lambregts";
