@@ -7,7 +7,7 @@ include "../../includes/menu.php";
         <h2>Uitwerkingen</h2>
         <?php
         for($i = 0; $i <= 7; $i++) {
-            $adder = strtotime("now +" . $i . "days");
+            $adder = strtotime("+".$i . "days");
             $day = date('w', $adder);
             $fullday = date('l d-n-Y', $adder);
             echo "Dag " . $day . " is " . $fullday.'<br>';

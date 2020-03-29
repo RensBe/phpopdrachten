@@ -1,21 +1,21 @@
 <?php
 
 // eerste while loop telt af van 19
-$task2 = "Lancering in: ";
+$lanceering = "Lancering in: ";
 $countdown = "";
 $count = 20;
 while ($count != 0):
     {
-        $count -= 1;
+        $count--;
         if($count != 0) {
             $countdown = $countdown . $count . ", ";
         }
         else
         {
-            $countdown = $countdown.$count;
+            $countdown = $countdown . $count;
         }
     }
-$task2 = $task2.$countdown;
+$task2 = $lanceering.$countdown;
 
 
 //eerste for loop, doet hetzelfde als de vorige
