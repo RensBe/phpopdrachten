@@ -2,7 +2,6 @@
 //includes van de pagina
 include "../../includes/header.php";
 include "../../includes/menu.php";
-print_r($_GET);
 ?>
     <main id="wrapper">
         <h2>Uitwerkingen</h2>
@@ -13,7 +12,7 @@ print_r($_GET);
                 </td>
                 <td>
                     <?php
-                    echo $_GET["companyName"]
+                    echo $_GET["companyName"];
                     ?>
                 </td>
             </tr>
@@ -23,7 +22,7 @@ print_r($_GET);
                 </td>
                 <td>
                     <?php
-                    echo $_GET["firstName"]
+                    echo $_GET["firstName"];
                     ?>
                 </td>
             </tr>
@@ -33,7 +32,7 @@ print_r($_GET);
                 </td>
                 <td>
                     <?php
-                    echo $_GET["surName"]
+                    echo $_GET["surName"];
                     ?>
                 </td>
             </tr>
@@ -43,7 +42,7 @@ print_r($_GET);
                 </td>
                 <td>
                     <?php
-                    echo $_GET["telephoneNumber"]
+                    echo $_GET["telephoneNumber"];
                     ?>
                 </td>
             </tr>
@@ -53,7 +52,7 @@ print_r($_GET);
                 </td>
                 <td>
                     <?php
-                    echo $_GET["email"]
+                    echo $_GET["email"];
                     ?>
                 </td>
             </tr>
@@ -63,7 +62,7 @@ print_r($_GET);
                 </td>
                 <td>
                     <?php
-                    echo $_GET["message"]
+                    echo $_GET["message"];
                     ?>
                 </td>
             </tr>

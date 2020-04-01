@@ -12,8 +12,4 @@
     <title>
         opdrachten
     </title>
-</head>
-<body>
-<header>
-    <h1><?php echo "Uitwerkingen van PHP-opdrachten"; ?></h1>
-</header>
+

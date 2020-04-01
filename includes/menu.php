@@ -1,6 +1,11 @@
 <?php
 $base_url = "http://localhost/phpopdrachten/";
 ?>
+</head>
+<body>
+<header>
+    <h1><?php echo "Uitwerkingen van PHP-opdrachten"; ?></h1>
+</header>
 <aside>
     <h2>
         Menu
