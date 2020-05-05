@@ -64,7 +64,7 @@ require "../../includes/functions.php";
             </td>
             <td>
                 <?php
-                echo $_POST["infected"]
+                echo $_POST["infected"];
                 ?>
             </td>
         </tr>
@@ -74,7 +74,7 @@ require "../../includes/functions.php";
             </td>
             <td>
                 <?php
-                echo $_POST["knowInfected"]
+                echo $_POST["knowInfected"];
                 ?>
             </td>
         </tr>
@@ -96,7 +96,7 @@ require "../../includes/functions.php";
             <td>
                 <?php
 //                haalt functie uit de functions.php
-                echo echoKans();
+                echoKans();
                 ?>
             </td>
         </tr>

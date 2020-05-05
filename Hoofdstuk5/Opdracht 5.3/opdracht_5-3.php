@@ -45,7 +45,9 @@ include "../../includes/menu.php";
                 <tr>
                     <td colspan="2">
 <!--                        radio button lijst-->
-                        Ken je mensen die besmet zijn in je woonplaats?<input type="radio" name="knowInfected" value="Ja">Ja<input type="radio" name="knowInfected" value="Nee">Nee
+                        Ken je mensen die besmet zijn in je woonplaats?
+                        <input type="radio" name="knowInfected" value="Ja">Ja
+                        <input type="radio" name="knowInfected" value="Nee">Nee
                     </td>
                 </tr>
                 <tr>
