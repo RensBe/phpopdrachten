@@ -34,3 +34,6 @@ while ($row = $result->fetch(PDO::FETCH_ASSOC))
 }
 // Tonen van de inhoud van aJokes
 var_dump($aJokes);
+
+// !!! in plaats van query gebruiken:
+// !!! $result = $pdo->exec();
