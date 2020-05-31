@@ -4,7 +4,7 @@
 // Inladen functies en includes bestand
 include "../../includes/header.php";
 include "../../includes/menu.php";
-include("functions.php");
+include("../functions.php");
 echo "<main id=\"wrapper\"><h2>Uitwerkingen</h2>";
 // Starten van een database connectie
 startConnection();
@@ -48,6 +48,7 @@ echo "<p> $query </p>";
             ?>
         </table>
     </form>
+    <a href='<?php echo  $base_url;//link naar opdracht 7.4?>hoofdstuk 7/opdracht 7.4/insert.php'>Toevoegen grappen (opdracht 7.4)</a>
 </main>
 <?php
 include "../../includes/footer.php";

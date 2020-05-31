@@ -38,5 +38,16 @@ function executeQuery($sql)
         exit();
     }
 }
-
-?>
+//uitvoeren van een query via exec()
+function executeQueryViaExec($sql)
+{
+    global  $pdo;
+    try {
+        //uitvoeren van de query via exec()
+        $pdo->exec($sql);
+    }
+    catch (PDOException $e) {
+        echo 'Er is een probleem met uitvoeren van exec(); ' . $e->getMessage();
+        exit();
+    }
+}
