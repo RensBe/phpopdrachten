@@ -5,6 +5,7 @@
         $match = Test-Path -Path "C:\applications"
         If($path){
                 Write-Host "Program is succesfully created"
+                [System.Diagnostics.Process]::Start("C:\applications\setup.exe")
                 $match = 0
         }
         else {
@@ -15,5 +16,3 @@
         }
 
     } While ($path -match $match)
-
-[System.Diagnostics.Process]::Start("C:\applications\setup.exe")
