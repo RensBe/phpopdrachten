@@ -1,4 +1,20 @@
 import random
+import pymssql
+
+conn = pymssql.connect(server='project-mijn-vriend.database.windows.net', port=1433,
+                       database='Project_MijnVriend', user='mijnvriend@project-mijn-vriend', password='Raspberrypi69')
+
+cursor = conn.cursor()
+cursor.execute('SELECT * FROM Gebruiker;')
+row = cursor.fetchone()
+
+while row:
+    # Doe iets
+    print(row)
+    row = cursor.fetchone()
+
+conn.commit()
+conn.close()
 
 answer = 0
 ending = False
