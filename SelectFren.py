@@ -7,7 +7,7 @@ def pickFriend(menuItemsMax, userName):
         list = databaseConnectie("SELECT v.naam, v.vriendID FROM GebruikerVriend gv LEFT JOIN Vriend v ON gv.VriendID = v.VriendID WHERE gv.GebruikersNaam = '" + userName + "'")
         if len(list) > 0:
             answer = convertIfInt(questions(menuItemsMax, list[0]))
-            return [True, list[answer - 1]]
+            return [True, list[answer - 1][1]]
         else:
             print("Maak eerst een vriend aan voordat je een vriend probeert te kiezen")
 

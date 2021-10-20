@@ -1,6 +1,9 @@
 import random, keyboard
 
-def BKE():
+from Project1.globalFunctions import databaseConnectie
+
+
+def BKE(friendID):
     def checkIfSituation(inputs, checkFor, checkWin):
         global amountExist, empty
 
@@ -52,7 +55,7 @@ def BKE():
             elif amountExist > 2 and checkWin:
                 return 1
 
-    def startGame():
+    def startGame(friendID):
         global selected
         inputs = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
         selected = 0
@@ -108,11 +111,13 @@ def BKE():
                 print("Jij hebt gewonnen!")
                 displayBKE(inputs, -1)
                 input("Druk op enter om terug naar het menu te gaan\n")
+                UpdateValues(friendID)
                 return
             elif checkIfSituation(inputs, "O", True):
                 print("Vriend heeft het spel gewonnen!")
                 displayBKE(inputs, -1)
                 input("Druk op enter om terug naar het menu te gaan\n")
+                UpdateValues(friendID)
                 return
 
             emptyValue = False
@@ -124,6 +129,7 @@ def BKE():
                 print("Het is gelijkspel!")
                 displayBKE(inputs, -1)
                 input("Druk op enter om terug naar het menu te gaan\n")
+                UpdateValues(friendID)
                 return
 
     def displayBKE(inputs, selectedPos):
@@ -143,4 +149,7 @@ def BKE():
         print("      |      |      ")
         inputs[selectedPos] = originalInput
 
-    startGame()
+    def UpdateValues(friendID):
+        databaseConnectie("UPDATE vriend SET Emotie += 1 WHERE VriendID = " + str(friendID))
+
+    startGame(friendID)
