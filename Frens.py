@@ -1,13 +1,13 @@
 import time
 import random
 import datetime
-#import RPi.GPIO as GPIO
+import RPi.GPIO as GPIO
 #import Adafruit_BMP.BMP280 as BMP280
-from Project1.BotKaEi import BKE
-from Project1.SelectFren import createFriend, pickFriend
-from Project1.globalFunctions import databaseConnectie, convertIfInt
-from Project1.loginFile import login, createAccount
-from Project1.question import questions
+from BotKaEi import BKE
+from SelectFren import createFriend, pickFriend
+from globalFunctions import databaseConnectie, convertIfInt
+from loginFile import login, createAccount
+from question import questions
 
 menuItemsMax = 4
 loggedIn = False
@@ -35,6 +35,11 @@ def temperature():
     # print('Sealevel Pressure = {0:0.2f} Pa'.format(sensor.read_sealevel_pressure()))
 
 
+def hunger():
+    list = databaseConnectie("SELECT h.bericht FROM honger h LEFT JOIN vriend v ON h.hongerniveau = v.honger WHERE v.vriendID = " + str(friendID))
+    print(list[0][0])
+
+
 def emotion():
     list = databaseConnectie("SELECT e.Bericht FROM Vriend v LEFT JOIN Emotie e ON v.Emotie = e.EmotieLevel WHERE v.vriendID = " + str(friendID))
     print(list[0][0])
@@ -47,27 +52,27 @@ def date():
 
 def Lightlevel():
     pass
-    # GPIO.setmode(GPIO.BOARD)
-    #
-    # pin_to_circuit = 7
-    # count = 0
-    #
-    # GPIO.setup(pin_to_circuit, GPIO.OUT)
-    # GPIO.output(pin_to_circuit, GPIO.LOW)
-    # time.sleep(0.1)
-    #
-    # GPIO.setup(pin_to_circuit, GPIO.IN)
-    #
-    # while (GPIO.input(pin_to_circuit) == GPIO.LOW):
-    #     count += 1
-    #
-    # try:
-    #     while True:
-    #         print(Lightlevel(pin_to_circuit))
-    # except KeyboardInterrupt:
-    #     pass
-    # finally:
-    #     GPIO.cleanup()
+#     GPIO.setmode(GPIO.BOARD)
+#     
+#     pin_to_circuit = 7
+#     count = 0
+#     
+#     GPIO.setup(pin_to_circuit, GPIO.OUT)
+#     GPIO.output(pin_to_circuit, GPIO.LOW)
+#     time.sleep(0.1)
+#     
+#     GPIO.setup(pin_to_circuit, GPIO.IN)
+#     
+#     while (GPIO.input(pin_to_circuit) == GPIO.LOW):
+#         count += 1
+#     
+#     try:
+#         while True:
+#             print(Lightlevel(pin_to_circuit))
+#     except KeyboardInterrupt:
+#         pass
+#     finally:
+#         GPIO.cleanup()
 
 
 def facts():
@@ -89,11 +94,12 @@ def switch_answer(answer):
         1: temperature,
         2: emotion,
         3: date,
-        4: lightlevel,
+        4: Lightlevel,
         5: facts,
         6: callBKE,
         7: birthdayMessage,
-        8: endIt
+        8: hunger,
+        9: endIt
     }
     func = switch.get(answer, lambda: "Antwoord niet geaccepteerd")
     func()
@@ -130,7 +136,7 @@ while not pickedFriend:
 
 while loggedIn:
     menulist = ["1: Check temperatuur", "2: Check emotie", "3: Check datum", "4: Check lichtniveau",
-                "5: Vertel een feitje", "6: Speel boter kaas en eieren", "7: Verjaardag!", "8: Exit Friend"]
+                "5: Vertel een feitje", "6: Speel boter kaas en eieren", "7: Verjaardag!", "8: Hongerniveau", "9: Exit Friend"]
     answer = convertIfInt(questions(menuItemsMax, menulist))
     input()
     switch_answer(answer)

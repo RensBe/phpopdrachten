@@ -1,4 +1,4 @@
-from Project1.globalFunctions import databaseConnectie
+from globalFunctions import databaseConnectie
 
 
 def createAccount():

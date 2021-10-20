@@ -1,6 +1,6 @@
 import random, keyboard
 
-from Project1.globalFunctions import databaseConnectie
+from globalFunctions import databaseConnectie
 
 
 def BKE(friendID):
@@ -150,6 +150,7 @@ def BKE(friendID):
         inputs[selectedPos] = originalInput
 
     def UpdateValues(friendID):
-        databaseConnectie("UPDATE vriend SET Emotie += 1 WHERE VriendID = " + str(friendID))
+        pass
+#         databaseConnectie("UPDATE vriend SET Emotie += 1 WHERE VriendID = " + str(friendID))
 
     startGame(friendID)
